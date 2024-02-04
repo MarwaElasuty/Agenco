@@ -122,6 +122,8 @@ img[alt="brand-img"] {
 
     button[name="contact-us-list"] {
         display: block;
+        margin-top: 28px;
+        font-size: 23px;
     }
 }
 
