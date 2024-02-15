@@ -7,207 +7,357 @@
 
 nav {
     display: flex;
+    padding: 35px;
     justify-content: space-between;
     align-items: center;
-    padding: 33px;
+    position: relative;
+    width: 89%;
+    margin: auto;
+    column-gap: 27px;
 }
 
 ul {
     display: flex;
+    column-gap: 92px;
     list-style-type: none;
-    column-gap: 60px;
+    font-size: 20px;
 }
 
-button[name="contact-us-list"] {
-    padding: 15px;
-    border: 1px solid #3a70e3;
-    background-color: white;
-    border-radius: 50px;
-    color: #3a70e3;
-    font-size: 21px;
-    display: none;
-    margin: auto;
+
+ul a {
+    text-decoration: none;
+    color: black;
 }
 
-button[name="contact-us-btn"] {
-    padding: 10px;
-    border: 1px solid #3a70e3;
-    background-color: white;
-    border-radius: 50px;
-    color: #3a70e3;
-    font-size: 24px;
-    width: 180px;
+
+.ul-list a:hover {
+    color: #518581;
 }
 
-img[alt="menu"] {
-    width: 41px;
-    display: none;
-
-}
-
-.contact-w-menu {
+.nav-btns {
     display: flex;
-    column-gap: 10px;
-    padding: 20px;
+    column-gap: 30px;
+    align-items: center;
 }
 
-.star-div {
+.menu-btns {
+    display: none;
+}
+
+.menu-btns > img:nth-of-type(1){
+    padding-right: 10px;
+}
+
+.logo-div {
+    padding-top: 10px;
+}
+
+.nav-btns-w-search {
     display: flex;
     align-items: center;
-    column-gap: 10px;
+    column-gap: 21px;
 }
 
-img[alt="brand-img"] {
-    width: 201px;
+button[name="login"] {
+    background-color: inherit;
+    padding: 15px;
+    border-style: none;
+    font-size: 23px;
 }
 
-/* nav and ul media query */
+button[name="start"] {
+    padding: 11px;
+    width: 128px;
+    border-style: none;
+    font-size: 16px;
+    background-color: white;
+    color: #3a70e3;
+    border: 1px solid #3a70e3;
+    border-radius: 20px;
+}
+
+img[alt="menu-burger"] {
+    display: none;
+}
+
+
+/* nav media query */
 
 @media screen and (max-width: 1200px) and (min-width:992px) {
-    .ul {
+
+    ul {
+        flex-direction: column;
+    }
+
+    .ul-list {
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        padding: 58px;
+        background-color: #3a70e3;
+        color: white;
+        font-size: 25px;
+        z-index: 2;
+        text-align: center;
+        border-radius: 76px;
+    }
+
+    ul a {
+        color: white;
+    }
+
+    ul a:hover {
+        color: white;
+    }
+
+    .display {
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        padding: 58px;
+        background-color: #3a70e3;
+        color: white;
+        font-size: 25px;
+        z-index: 2;
+        text-align: center;
+        border-radius: 76px;
+    }
+
+    .ul-list a:hover {
+        color: white;
+    }
+
+
+    .ul-list li {
+        padding-bottom: 22px;
+    }
+
+    img[alt="menu-burger"] {
+        display: block;
+    }
+
+    nav {
+        padding: 32px;
+    }
+
+    .nav-btns {
         display: none;
     }
 
-    button[name="contact-us-btn"] {
-        font-size: 24px;
-        width: 180px;
+    .menu-btns {
+        display: block;
+        padding: 5px;
+        border-radius: 10px;
     }
 
-    button[name="contact-us-list"] {
-        display: none;
-    }
-
-    img[alt="brand-img"] {
-        width: 201px;
-    }
 
 }
 
 @media screen and (max-width: 992px) and (min-width:786px) {
     ul {
-        display: none;
+        flex-direction: column;
     }
 
-    button[name="contact-us-btn"] {
-        display: none;
-    }
-
-    /* 
-    img[alt="brand-img"] {
-        width: 300px;
-    } */
-
-    img[alt="menu"] {
-        display: block;
-
-    }
-
-    .ul-list {
-        position: absolute;
-        top: 108px;
-        right: 21px;
-        border: 5px solid white;
-        padding: 84px;
-        background-color: #3a70e3;
-        font-size: 42px;
-        z-index: 1;
-        text-align: center;
+    ul a {
         color: white;
+    }
+
+    .ul-list a:hover {
+        color: white;
+    }
+
+    .display {
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        padding: 58px;
+        background-color: #3a70e3;
+        color: white;
+        font-size: 25px;
+        z-index: 2;
+        text-align: center;
         border-radius: 76px;
     }
 
-    .ul-list li {
-        padding: 10px;
+    .ul-list {
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        padding: 58px;
+        background-color: #3a70e3;
+        color: white;
+        font-size: 25px;
+        z-index: 2;
+        text-align: center;
+        border-radius: 76px;
     }
 
-    button[name="contact-us-list"] {
+    img[alt="menu-burger"] {
         display: block;
-        margin-top: 28px;
-        font-size: 23px;
+    }
+
+    .ul-list li {
+        padding-bottom: 22px;
+    }
+
+    nav {
+        padding: 32px;
+    }
+
+    .nav-btns {
+        display: none;
+    }
+
+
+
+    .menu-btns {
+        display: block;
+        padding: 5px;
+        border-radius: 10px;
     }
 }
 
 @media screen and (max-width: 786px) and (min-width:600px) {
+
     ul {
-        display: none;
+        flex-direction: column;
     }
 
-    button[name="contact-us-btn"] {
-
-        display: none;
-    }
-
-    /* img[alt="brand-img"] {
-        width: 300px;
-    } */
-    img[alt="menu"] {
-        display: block;
-
-    }
-
-    .ul-list {
-        position: absolute;
-        top: 108px;
-        right: 21px;
-        border: 5px solid white;
-        padding: 84px;
-        background-color: #3a70e3;
-        font-size: 42px;
-        z-index: 1;
-        text-align: center;
+    ul a {
         color: white;
+    }
+
+    .ul-list a:hover {
+        color: white;
+    }
+
+    .display {
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        padding: 58px;
+        background-color: #3a70e3;
+        color: white;
+        font-size: 25px;
+        z-index: 2;
+        text-align: center;
         border-radius: 76px;
     }
 
-    button[name="contact-us-list"] {
+    .ul-list {
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        padding: 58px;
+        background-color: #3a70e3;
+        color: white;
+        font-size: 25px;
+        z-index: 2;
+        text-align: center;
+        border-radius: 76px;
+    }
+
+    img[alt="menu-burger"] {
         display: block;
     }
 
     .ul-list li {
-        padding: 10px;
+        padding-bottom: 22px;
+    }
+
+    nav {
+        padding: 32px;
+    }
+
+    .nav-btns {
+        display: none;
+    }
+
+
+
+
+    .menu-btns {
+        display: block;
+        padding: 5px;
+        border-radius: 10px;
     }
 }
 
 @media screen and (max-width: 600px) {
+
     ul {
-        display: none;
+        flex-direction: column;
     }
 
-    button[name="contact-us-btn"] {
-
-        display: none;
-    }
-
-    button[name="contact-us-list"] {
-        display: block;
-    }
-
-    /* img[alt="brand-img"] {
-        width: 300px;
-    } */
-    img[alt="menu"] {
-        display: block;
-
-    }
-
-    .ul-list {
-        position: absolute;
-        top: 108px;
-        right: 21px;
-        border: 5px solid white;
-        padding: 84px;
-        background-color: #3a70e3;
-        font-size: 42px;
-        z-index: 1;
-        text-align: center;
+    .ul-list a:hover {
         color: white;
+    }
+
+    ul a {
+        color: white;
+    }
+
+    .display {
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        padding: 58px;
+        background-color: #3a70e3;
+        color: white;
+        font-size: 25px;
+        z-index: 2;
+        text-align: center;
         border-radius: 76px;
     }
 
+    .ul-list {
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        padding: 58px;
+        background-color: #3a70e3;
+        color: white;
+        font-size: 25px;
+        z-index: 2;
+        text-align: center;
+        border-radius: 76px;
+    }
+
+    img[alt="menu-burger"] {
+        display: block;
+    }
+
     .ul-list li {
-        padding: 10px;
+        padding-bottom: 22px;
+    }
+
+    nav {
+        padding: 32px;
+    }
+
+    .nav-btns {
+        display: none;
+    }
+
+
+
+    .menu-btns {
+        display: block;
+        padding: 5px;
+        border-radius: 10px;
     }
 }
+
+
+
 
 .main-background {
     text-align: center;
@@ -281,7 +431,7 @@ img[alt="brand-img"] {
 
 
 .main-background>h1 {
-    width: 40%;
+    width: 80%;
     margin: auto;
     padding-bottom: 20px;
     font-size: 47px;
@@ -289,7 +439,7 @@ img[alt="brand-img"] {
 
 .main-background p {
     padding-bottom: 20px;
-    width: 70%;
+    width: 85%;
     margin: auto;
     font-size: 35px;
 }
@@ -356,7 +506,7 @@ img[alt="back-img"] {
     }
 
     .main-background>h1 {
-        width: 100%;
+        width: 76%;
         font-size: 49px;
     }
 }
@@ -379,7 +529,7 @@ img[alt="back-img"] {
     }
 
     .main-background>h1 {
-        width: 100%;
+        width: 76%;
         font-size: 49px;
     }
 }
@@ -401,7 +551,7 @@ img[alt="back-img"] {
     }
 
     .main-background>h1 {
-        width: 100%;
+        width: 76%;
         font-size: 49px;
     }
 
@@ -414,7 +564,7 @@ img[alt="back-img"] {
 
 .team h3 {
     color: #3a70e3;
-    font-size: 25px;
+    font-size: 40px;
     font-weight: 400;
 }
 
@@ -430,7 +580,7 @@ img[alt="back-img"] {
     padding-bottom: 15px;
     padding-bottom: 20px;
     padding-top: 8px;
-    font-size: 40px;
+    font-size: 60px;
     font-weight: 400;
 }
 
@@ -492,39 +642,6 @@ img[alt="team"] {
     padding: 36px;
 }
 
-/* .team-mate {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 25px;
-}
-
-img[alt="team"] {
-    width: 30%;
-    border-radius: 15px;
-}
-
-.team-mate p {
-    width: 77%;
-    margin: auto;
-    text-align: center;
-    padding: 20px;
-}
-
-
-.team-mate-desc {
-    text-align: center;
-}
-
-.team-mate-desc>h3 {
-    padding-bottom: 15px;
-    font-size: 30px;
-}
-
-.team-mate-desc>h2 {
-    font-size: 40px;
-} */
 
 
 /* teammate media query */
@@ -543,13 +660,6 @@ img[alt="team"] {
         justify-content: space-evenly;
     }
 
-    .team h3 {
-        font-size: 47px;
-    }
-
-    .team-mate-desc>h2 {
-        font-size: 67px;
-    }
 
     .team-img-w-text-div p {
         width: 100%;
@@ -572,14 +682,6 @@ img[alt="team"] {
 
     .team-btns-div {
         justify-content: space-evenly;
-    }
-
-    .team h3 {
-        font-size: 75px;
-    }
-
-    .team-mate-desc>h2 {
-        font-size: 57px;
     }
 
     .team-img-w-text-div p {
@@ -611,14 +713,6 @@ img[alt="team"] {
 
     .team-btns-div {
         justify-content: space-evenly;
-    }
-
-    .team h3 {
-        font-size: 75px;
-    }
-
-    .team-mate-desc>h2 {
-        font-size: 67px;
     }
 
     .team-img-w-text-div p {
@@ -653,13 +747,6 @@ img[alt="team"] {
         justify-content: space-evenly;
     }
 
-    .team h3 {
-        font-size: 75px;
-    }
-
-    .team-mate-desc>h2 {
-        font-size: 60px;
-    }
 
     .team-btns-div>button {
         font-size: 35px;
@@ -733,9 +820,7 @@ img[alt="team"] {
 
 }
 
-/* .services-text-div {
-    width: 50%;
-} */
+
 
 .up-div {
     display: flex;
@@ -773,13 +858,14 @@ img[alt="team"] {
 }
 
 .services-desc {
+    
     width: 51%;
 }
 
 .services-desc>h2 {
     padding-bottom: 20px;
     padding-top: 8px;
-    font-size: 45px;
+    font-size: 37px;
     width: 58%;
     font-weight: 400;
 
@@ -796,7 +882,11 @@ img[alt="team"] {
     .services {}
 
     .services-desc {
-        padding: 65px;
+        padding: 21px;
+        width: 100%;
+    }
+
+    .services-desc>h2 {
         width: 100%;
     }
 
@@ -838,6 +928,8 @@ img[alt="team"] {
     }
 
     .services-desc>h2 {
+        width: 100%;
+
         font-size: 57px;
     }
 
@@ -863,8 +955,10 @@ img[alt="team"] {
         flex-wrap: wrap;
     }
 
+    .services-desc>h2 {
+        width: 100%;
+    }
     .services-text-div {
-        padding: 65px;
         width: 100%;
     }
 
@@ -890,9 +984,11 @@ img[alt="team"] {
     .services {
         flex-wrap: wrap;
     }
+    .services-desc>h2 {
+        width: 100%;
+    }
 
     .services-text-div {
-        padding: 65px;
 
         width: 100%;
 
@@ -904,7 +1000,6 @@ img[alt="team"] {
     }
 
     .services-desc {
-        padding: 65px;
         width: 100%;
     }
 
@@ -1482,4 +1577,8 @@ hr{
 
 img[alt="service"] {
     width: 101px;
+}
+
+.display{
+    display: block;
 }
