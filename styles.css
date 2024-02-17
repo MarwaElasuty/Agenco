@@ -89,7 +89,7 @@ img[alt="menu-burger"] {
         position: absolute;
         top: 80px;
         right: 20px;
-        padding: 89px;
+        padding: 54px;
         background-color: #3a70e3;
         color: white;
         font-size: 25px;
@@ -184,7 +184,7 @@ img[alt="menu-burger"] {
         position: absolute;
         top: 80px;
         right: 20px;
-        padding: 89px;
+        padding: 54px;
         background-color: #3a70e3;
         color: white;
         font-size: 25px;
@@ -252,7 +252,7 @@ img[alt="menu-burger"] {
         position: absolute;
         top: 80px;
         right: 20px;
-        padding: 89px;
+        padding: 54px;
         background-color: #3a70e3;
         color: white;
         font-size: 25px;
@@ -321,7 +321,7 @@ img[alt="menu-burger"] {
         position: absolute;
         top: 80px;
         right: 20px;
-        padding: 89px;
+        padding: 54px;
         background-color: #3a70e3;
         color: white;
         font-size: 25px;
@@ -458,8 +458,12 @@ button[name="srart-project-btn"] {
 }
 
 img[alt="back-img"] {
-    width: 45%;
-    padding-top: 56px;
+    width: 100%;
+}
+
+.background-img-div{
+    width: 80%;
+    margin: auto;
 }
 
 
@@ -467,11 +471,6 @@ img[alt="back-img"] {
 /* background img media query */
 
 @media screen and (max-width: 1200px) and (min-width:992px) {
-    img[alt="back-img"] {
-        width: 95%;
-        padding-top: 80px;
-        padding: 41px;
-    }
 
     .main-background p {
         width: 100%;
@@ -489,12 +488,6 @@ img[alt="back-img"] {
 }
 
 @media screen and (max-width: 992px) and (min-width:786px) {
-    img[alt="back-img"] {
-        width: 100%;
-        padding-top: 80px;
-        padding: 41px;
-
-    }
 
     .main-background p {
         width: 100%;
@@ -512,13 +505,6 @@ img[alt="back-img"] {
 }
 
 @media screen and (max-width: 786px) and (min-width:600px) {
-    img[alt="back-img"] {
-        width: 100%;
-        padding-top: 80px;
-        padding: 41px;
-
-    }
-
     .main-background p {
         width: 100%;
         font-size: 37px;
@@ -535,12 +521,6 @@ img[alt="back-img"] {
 }
 
 @media screen and (max-width: 600px) {
-    img[alt="back-img"] {
-        width: 100%;
-        padding-top: 80px;
-        padding: 41px;
-    }
-
     .main-background p {
         width: 100%;
         font-size: 37px;
@@ -592,6 +572,7 @@ img[alt="back-img"] {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    row-gap: 25px;
 }
 
 .team-btns-div {
@@ -641,16 +622,17 @@ img[alt="team"] {
     padding-bottom: 17px;
 }
 
+.team-img-w-text-div{
+    
+}
+.team-two-btns-w-text{
+    width: 50%;
+}
 
 
 
 /* teammate media query */
 @media screen and (max-width: 1200px) and (min-width:992px) {
-
-    .team-img-w-text-div {
-        padding-left: 0;
-        flex-wrap: wrap;
-    }
 
     .team-mate{
         width: 100%;
@@ -669,11 +651,6 @@ img[alt="team"] {
 }
 
 @media screen and (max-width: 992px) and (min-width:786px) {
-
-    .team-img-w-text-div {
-        padding-left: 0;
-        flex-wrap: wrap;
-    }
     .team-mate{
         width: 100%;
     }
@@ -699,10 +676,6 @@ img[alt="team"] {
 }
 
 @media screen and (max-width: 786px) and (min-width:600px) {
-    .team-img-w-text-div {
-        padding-left: 0;
-        flex-wrap: wrap;
-    }
     .team-mate{
         width: 100%;
     }
@@ -722,11 +695,6 @@ img[alt="team"] {
 }
 
 @media screen and (max-width: 600px) {
-
-    .team-img-w-text-div {
-        padding-left: 0;
-        flex-wrap: wrap;
-    }
 
     .team {
         padding: 0;
@@ -869,7 +837,7 @@ img[alt="team"] {
 }
 
 .services-text-div {
-    font-size: 28px;
+    font-size: 25px;
 }
 
 /* services media query */
@@ -890,7 +858,13 @@ img[alt="team"] {
         border-radius: 50px;
         font-size: 18px;
     }
+    .up-div>div {
+        width: 46%;
+    }
 
+    .down-div>div {
+        width: 46%;
+    }
 }
 
 @media screen and (max-width: 992px) and (min-width:786px) {
@@ -927,11 +901,11 @@ img[alt="team"] {
     }
 
     .up-div>div {
-        width: 60%;
+        width: 46%;
     }
 
     .down-div>div {
-        width: 60%;
+        width: 46%;
     }
 
     .up-div h2 {
@@ -970,6 +944,14 @@ img[alt="team"] {
     .services-desc {
         width: 100%;
     }
+    .up-div>div {
+        width: 100%;
+    }
+
+    .down-div>div {
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -999,6 +981,13 @@ img[alt="team"] {
     .our-story-btn-div>button {
         border-radius: 50px;
         font-size: 18px;
+    }
+    .up-div>div {
+        width: 100%;
+    }
+
+    .down-div>div {
+        width: 100%;
     }
 
 }
@@ -1082,6 +1071,9 @@ img[alt="we-do"] {
         padding-bottom: 20px;
     }
 
+    .what-we-do-cards > div{
+        width: 45%;
+    }
     .what-we-do-headings {
         width: 100%;
     }
@@ -1090,23 +1082,15 @@ img[alt="we-do"] {
         width: 100%;
     }
 
-    #first-div {
-        width: 100%;
-    }
-
-    #second-div {
-        width: 100%;
-    }
-
-    #third-div {
-        width: 100%;
-    }
 }
 
 @media screen and (max-width: 992px) and (min-width:786px) {
     .what-we-do h3 {
         text-align: center;
         font-size: 75px;
+    }
+    .what-we-do-cards > div{
+        width: 100%;
     }
 
     .what-we-do-headings {
@@ -1129,22 +1113,14 @@ img[alt="we-do"] {
         font-size: 57px;
     }
 
-    #first-div {
-        width: 100%;
-    }
-
-    #second-div {
-        width: 100%;
-    }
-
-    #third-div {
-        width: 100%;
-    }
 }
 
 @media screen and (max-width: 786px) and (min-width:600px) {
     .what-we-do h3 {
         text-align: center;
+    }
+    .what-we-do-cards > div{
+        width: 100%;
     }
 
     .what-we-do-headings {
@@ -1152,18 +1128,6 @@ img[alt="we-do"] {
     }
 
     .what-we-do-text-div {
-        width: 100%;
-    }
-
-    #first-div {
-        width: 100%;
-    }
-
-    #second-div {
-        width: 100%;
-    }
-
-    #third-div {
         width: 100%;
     }
 }
@@ -1176,22 +1140,14 @@ img[alt="we-do"] {
     .what-we-do-headings {
         width: 100%;
     }
+    .what-we-do-cards > div{
+
+    }
 
     .what-we-do-text-div {
         width: 100%;
     }
 
-    #first-div {
-        width: 100%;
-    }
-
-    #second-div {
-        width: 100%;
-    }
-
-    #third-div {
-        width: 100%;
-    }
 }
 
 .testimonial h3 {
@@ -1241,8 +1197,8 @@ img[alt="we-do"] {
 }
 
 img[alt="client"] {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
 }
 
@@ -1251,7 +1207,7 @@ img[alt="client"] {
 /* testimonial cards media query */
 @media screen and (max-width: 1200px) and (min-width:992px) {
     .card {
-        width: 70%;
+        width: 44%;
     }
 }
 
@@ -1279,18 +1235,18 @@ img[alt="client"] {
 
 
 .collaboration {
-    display: flex;
-    padding: 51px;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
     margin-top: 40px;
     margin-bottom: 50px;
 }
 
+.collaboration > div {
+    width: 88%;
+    margin: auto;
+    margin-bottom: 100px;
+}
 .collaboration h2 {
-    font-size: 70px;
-    width: 71%;
+    font-size: 62px;
+    width: 63%;
     font-weight: 400;
     padding-bottom: 17px;
 }
@@ -1315,26 +1271,32 @@ button[name="get-started-btn"] {
     font-size: 21px;
 }
 
-img[alt="main-img"] {
-    width: 447px;
-    border-radius: 28px;
+.img-above-img-div{
+    display: flex;
+    justify-content: center;
+}
+
+.img-above-img-div > div{
+    width: 55%;
+    margin: auto;
+}
+
+.img-above-img-div > div:nth-of-type(1){
     position: relative;
     z-index: 1;
-}
-
-img[alt="absolute-img"] {
-    width: 403px;
-    position: absolute;
-    bottom: 80px;
-    left: 347px;
-    border-radius: 28px;
 
 }
+.img-above-img-div > div:nth-of-type(2){
+    margin-left: -238px;
+    margin-top: -120px;
+}
 
-.rel-and-abs-imgs {
-    position: relative;
-    right: 256px;
-    padding-top: 36px
+img[alt="above-img"]{
+    width: 100%;
+}
+
+img[alt="under-img"]{
+    width: 100%;
 }
 
 
@@ -1352,10 +1314,6 @@ img[alt="absolute-img"] {
         padding-top: 160px;
     }
 
-    img[alt="main-img"] {
-        width: 565px;
-    }
-
     img[alt="absolute-img"] {
         width: 516px;
         bottom: 288px;
@@ -1364,12 +1322,11 @@ img[alt="absolute-img"] {
 
     .collaboration h2 {
         width: 100%;
-        text-align: center;
     }
 
-    .collaboration p,
-    .get-started-btn-div {
-        text-align: center;
+
+    .img-above-img-div > div{
+        width: 90%;
     }
 
 }
@@ -1385,11 +1342,6 @@ img[alt="absolute-img"] {
         margin-top: 40px;
     }
 
-    img[alt="main-img"] {
-        width: 565px;
-        left: 178px;
-    }
-
     img[alt="absolute-img"] {
         width: 375px;
         bottom: 168px;
@@ -1400,14 +1352,11 @@ img[alt="absolute-img"] {
 
     .collaboration h2 {
         width: 100%;
-        text-align: center;
     }
 
-    .collaboration p,
-    .get-started-btn-div {
-        text-align: center;
+    .img-above-img-div > div{
+        width: 90%;
     }
-
 }
 
 @media screen and (max-width: 786px) and (min-width:600px) {
@@ -1419,9 +1368,6 @@ img[alt="absolute-img"] {
         right: 0;
     }
 
-    img[alt="main-img"] {
-        width: 373px;
-    }
 
     img[alt="absolute-img"] {
         width: 331px;
@@ -1431,14 +1377,10 @@ img[alt="absolute-img"] {
 
     .collaboration h2 {
         width: 100%;
-        text-align: center;
     }
-
-    .collaboration p,
-    .get-started-btn-div {
-        text-align: center;
+    .img-above-img-div > div{
+        width: 90%;
     }
-
 }
 
 @media screen and (max-width: 600px) {
@@ -1446,9 +1388,6 @@ img[alt="absolute-img"] {
         margin-top: 140px;
     }
 
-    img[alt="main-img"] {
-        width: 373px;
-    }
 
     img[alt="absolute-img"] {
         width: 331px;
@@ -1464,14 +1403,11 @@ img[alt="absolute-img"] {
 
     .collaboration h2 {
         width: 100%;
-        text-align: center;
     }
 
-    .collaboration p,
-    .get-started-btn-div {
-        text-align: center;
+    .img-above-img-div > div{
+        width: 90%;
     }
-
 }
 
 .footer-main-div {
@@ -1480,15 +1416,15 @@ img[alt="absolute-img"] {
     justify-content: space-evenly;
     margin-top: 20px;
     padding: 27px;
-    font-size: 25px;
-    column-gap: 16px;
+    font-size: 23px;
+    row-gap: 15px;
+    column-gap: 26px;
     background-color: rgb(59, 59, 59);
     color: white;
 }
 
 .footer-main-div>div {
     padding-top: 25px;
-    padding: 41px;
 }
 
 .icons-div {
