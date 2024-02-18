@@ -732,7 +732,7 @@ img[alt="team-details"] {
 
 .up-down-cards {
     flex-wrap: wrap;
-    width: 42%;
+    width: 40%;
 }
 
 /* up and down cards media query */
@@ -791,16 +791,17 @@ img[alt="team-details"] {
 
 .up-div {
     display: flex;
-    justify-content: space-around;
-    column-gap: 10px;
+    justify-content: center;
+    column-gap: 17px;
     margin-bottom: 20px;
     flex-wrap: wrap;
 }
 
 .down-div {
     display: flex;
-    justify-content: space-around;
-    column-gap: 10px;
+    justify-content: center;
+    column-gap: 17px;
+    margin-bottom: 20px;
     flex-wrap: wrap;
 
 }
@@ -833,7 +834,6 @@ img[alt="team-details"] {
     padding-bottom: 20px;
     padding-top: 8px;
     font-size: 37px;
-    width: 58%;
     font-weight: 400;
 
 
@@ -852,9 +852,6 @@ img[alt="team-details"] {
         width: 100%;
     }
 
-    .services-desc>h2 {
-        width: 100%;
-    }
 
     .team-btns-div>button,
     .our-story-btn-div>button {
@@ -897,13 +894,6 @@ img[alt="team-details"] {
     .services-desc {
         width: 100%;
     }
-
-    .services-desc>h2 {
-        width: 100%;
-
-        font-size: 57px;
-    }
-
     .up-div>div {
         width: 46%;
     }
@@ -924,10 +914,6 @@ img[alt="team-details"] {
 @media screen and (max-width: 786px) and (min-width:600px) {
     .services {
         flex-wrap: wrap;
-    }
-
-    .services-desc>h2 {
-        width: 100%;
     }
 
     .services-text-div {
@@ -964,11 +950,6 @@ img[alt="team-details"] {
     .services {
         flex-wrap: wrap;
     }
-
-    .services-desc>h2 {
-        width: 100%;
-    }
-
     .services-text-div {
 
         width: 100%;
@@ -1494,7 +1475,7 @@ hr {
 }
 
 img[alt="service"] {
-    width: 101px;
+    width: 100%;
 }
 
 .display {
