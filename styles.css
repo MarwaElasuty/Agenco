@@ -89,7 +89,7 @@ img[alt="menu-burger"] {
         position: absolute;
         top: 80px;
         right: 20px;
-        padding: 54px;
+        padding: 66px;
         background-color: #3a70e3;
         color: white;
         font-size: 25px;
@@ -128,7 +128,7 @@ img[alt="menu-burger"] {
 
     .ul-list li {
         font-size: 55px;
-        padding-bottom: 22px;
+        padding-bottom: 40px;
     }
 
     img[alt="menu-burger"] {
@@ -184,7 +184,7 @@ img[alt="menu-burger"] {
         position: absolute;
         top: 80px;
         right: 20px;
-        padding: 54px;
+        padding: 66px;
         background-color: #3a70e3;
         color: white;
         font-size: 25px;
@@ -199,7 +199,7 @@ img[alt="menu-burger"] {
 
     .ul-list li {
         font-size: 55px;
-        padding-bottom: 22px;
+        padding-bottom: 40px;
     }
 
     nav {
@@ -252,7 +252,7 @@ img[alt="menu-burger"] {
         position: absolute;
         top: 80px;
         right: 20px;
-        padding: 54px;
+        padding: 66px;
         background-color: #3a70e3;
         color: white;
         font-size: 25px;
@@ -267,7 +267,7 @@ img[alt="menu-burger"] {
 
     .ul-list li {
         font-size: 55px;
-        padding-bottom: 22px;
+        padding-bottom: 40px;
     }
 
     nav {
@@ -321,7 +321,7 @@ img[alt="menu-burger"] {
         position: absolute;
         top: 80px;
         right: 20px;
-        padding: 54px;
+        padding: 66px;
         background-color: #3a70e3;
         color: white;
         font-size: 25px;
@@ -336,7 +336,7 @@ img[alt="menu-burger"] {
 
     .ul-list li {
         font-size: 55px;
-        padding-bottom: 22px;
+        padding-bottom: 40px;
     }
 
     nav {
@@ -625,7 +625,7 @@ img[alt="team-details"] {
     padding: 13px;
     border-radius: 12px;
     border-style: none;
-    font-size: 23px;
+    font-size: 26px;
     width: 226px;
     font-weight: 500;
 }
@@ -1203,7 +1203,7 @@ img[alt="client"] {
 
 @media screen and (max-width: 992px) and (min-width:786px) {
     .card {
-        width: 76%;
+        width: 100%;
     }
 
 }
@@ -1409,9 +1409,9 @@ img[alt="under-img"] {
     justify-content: space-evenly;
     margin-top: 20px;
     padding: 27px;
-    font-size: 23px;
+    font-size: 26px;
     row-gap: 15px;
-    column-gap: 26px;
+    column-gap: 35px;
     background-color: rgb(59, 59, 59);
     color: white;
 }
@@ -1442,6 +1442,7 @@ hr {
     text-align: center;
     color: white;
     padding: 10px;
+    font-size: 21px;
 }
 
 /* footer media query */
